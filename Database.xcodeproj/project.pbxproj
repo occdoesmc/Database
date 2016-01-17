@@ -20,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		462738851C4BE61A00758F27 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; };
+		462738861C4BE6DC00758F27 /* 0478_s15_qp_22.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 0478_s15_qp_22.pdf; sourceTree = "<group>"; };
 		5521D69D1C40293D005F51AB /* Database.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Database.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5521D6A01C40293D005F51AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5521D6A21C40293D005F51AB /* ClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +64,7 @@
 		5521D69F1C40293D005F51AB /* Database */ = {
 			isa = PBXGroup;
 			children = (
+				462738861C4BE6DC00758F27 /* 0478_s15_qp_22.pdf */,
 				462738851C4BE61A00758F27 /* Playground.playground */,
 				5521D6A01C40293D005F51AB /* AppDelegate.swift */,
 				5521D6A21C40293D005F51AB /* ClassViewController.swift */,

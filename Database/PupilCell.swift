@@ -11,7 +11,7 @@ extension PupilCell {
     
     func presentPupil(pupil: Pupil) {
         nameLabel.text = pupil.name
-        weightLabel.text = String(pupil.weight)
+        weightLabel.text = String(pupil.weight - pupil.otherWeight)
     }
     
 }

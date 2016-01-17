@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15C50" minimumToolsVersion="Automatic">
+    <entity name="Class" representedClassName=".Class" syncable="YES">
+        <attribute name="identifier" attributeType="String" regularExpressionString="[0-9][A-Z]" syncable="YES"/>
+        <relationship name="pupils" toMany="YES" minCount="30" maxCount="30" deletionRule="Cascade" destinationEntity="Pupil" inverseName="class_" inverseEntity="Pupil" syncable="YES"/>
+    </entity>
+    <entity name="Pupil" representedClassName=".Pupil" syncable="YES">
+        <attribute name="name" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="weight" attributeType="Float" syncable="YES"/>
+        <relationship name="class_" maxCount="1" deletionRule="Nullify" destinationEntity="Class" inverseName="pupils" inverseEntity="Class" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Class" positionX="-54" positionY="9" width="128" height="75"/>
+        <element name="Pupil" positionX="162" positionY="-102" width="128" height="90"/>
+    </elements>
+</model>

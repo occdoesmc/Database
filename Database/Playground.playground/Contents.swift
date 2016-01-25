@@ -2,13 +2,13 @@ import UIKit
 
 // Data
 
-let names = ["John", "Adam", "Rudy"]
-let weights: [Float] = [65, 75, 22]
-let otherWeights: [Float] = [68, 72, 220]
+let names = ["John", "Adam", "Rudy", "Boris", "Aimee"]
+let weights: [Float] = [65, 75, 22, 84, 79]
+let otherWeights: [Float] = [65, 74, 220, 80, 80]
 
 // Validation
 
-let numberOfPupils = 3
+let numberOfPupils = names.count
 
 assert(names.count == numberOfPupils)
 assert(weights.count == numberOfPupils)
@@ -47,5 +47,36 @@ for index in 0..<numberOfPupils {
 }
 
 print("\n")
+
+
+// Task 3
+
+print("Weight difference summary", "\n")
+
+let weightDifferenceThreshold: Float = 2.5
+
+for index in 0..<numberOfPupils {
+    let weightDifference = weightDifferences[index]
+    guard abs(weightDifference) > weightDifferenceThreshold else { continue }
+    let suffix = weightDifference < 0 ? "thinner! :)" : "fatter! :("
+    print("Pupil", names[index], "has had a weight change of", weightDifference, "kilos, and has become", suffix)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
